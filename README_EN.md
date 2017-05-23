@@ -9,52 +9,25 @@
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/tinper-bee/bee-rate.svg)](http://isitmaintained.com/project/tinper-bee/bee-rate "Percentage of issues still open")
 
 
+
 react bee-rate component for tinper-bee
 
-评分组件
 
-## 使用方法
+## Usage
 
-```
-import Rate from 'bee-rate';
-
-class Rate extends Component {
-    render() {
-        return (
-            <Rate/>
-        )
-    }
-}
-```
-#### 样式引入
-- 可以使用link引入build目录下Clipboard.css
-```
-<link rel="stylesheet" href="./node_modules/bee-rate/build/Rate.css">
-```
-- 可以在js中import样式
 ```js
-import "./node_modules/bee-rate/src/Rate.scss"
-//或是
-import "./node_modules/bee-rate/build/Rate.css"
+
+
 ```
+
 
 
 ## API
 
 |参数|说明|类型|默认值|
-|:---|:---:|:--:|---:|
-|count|star总数|`number`|5|
-|value|当前数，受控值|`number`|-|
-|defaultValue|默认值|`number`|0|
-|onChange|选择时的回调|`function`|-|
-|onHoverChange|鼠标经过时数值变化的回调|`function`|-|
-|allowHalf|是否允许半选|`boolean`|false|
-|disabled|只读，无法进行交互|`boolean`|false|
-|character|自定义字符|`ReactNode`/`string`|<Icon type="uf-star" />|
-|className|自定义样式类名|`string`|-|
-|style|	自定义样式对象|`object`|-|
+|:--|:---:|:--:|---:|
 
-#### 开发调试
+#### develop
 
 ```sh
 $ npm install -g bee-tools
