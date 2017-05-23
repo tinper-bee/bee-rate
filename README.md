@@ -27,7 +27,7 @@ class Rate extends Component {
 }
 ```
 #### 样式引入
-- 可以使用link引入build目录下Clipboard.css
+- 可以使用link引入build目录下Rate.css
 ```
 <link rel="stylesheet" href="./node_modules/bee-rate/build/Rate.css">
 ```
