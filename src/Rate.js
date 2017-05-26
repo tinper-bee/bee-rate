@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import Rates from 'rc-rate';
 import Icon from 'bee-icon';
+
 const propTypes = {
     count: PropTypes.number,
     value: PropTypes.number,
@@ -10,8 +11,10 @@ const propTypes = {
     allowHalf: PropTypes.bool,
     disabled: PropTypes.bool,
     className: PropTypes.string,
-    style: PropTypes.object
+    style: PropTypes.object,
+
 };
+
 const defaultProps = {
     count: 5,
     defaultValue: 0,
@@ -26,14 +29,15 @@ const defaultProps = {
     disabled: false,
     character: <Icon type="uf-star" />,
     className: '',
-    style: {}
+    style: {},
+    clsPrefix: 'u-rate'
 };
 class Rate extends Component {
     render() {
-        const {count, value, defaultValue, onChange, onHoverChange, allowHalf, disabled, character, className, style} = this.props;
+        const {count, value, defaultValue, onChange, clsPrefix, onHoverChange, allowHalf, disabled, character, className, style} = this.props;
         return (
             <span className="u-Rate">
-                <Rates count={count} value={value}  defaultValue={defaultValue} onChange={onChange}
+                <Rates prefixCls={clsPrefix} count={count} value={value}  defaultValue={defaultValue} onChange={onChange}
                        onHoverChange={onHoverChange} allowHalf={allowHalf} disabled={disabled} character={character}
                        className={className} style={style}/>
             </span>

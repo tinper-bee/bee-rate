@@ -36,7 +36,9 @@ var propTypes = {
     disabled: _react.PropTypes.bool,
     className: _react.PropTypes.string,
     style: _react.PropTypes.object
+
 };
+
 var defaultProps = {
     count: 5,
     defaultValue: 0,
@@ -47,7 +49,8 @@ var defaultProps = {
     disabled: false,
     character: _react2["default"].createElement(_beeIcon2["default"], { type: 'uf-star' }),
     className: '',
-    style: {}
+    style: {},
+    clsPrefix: 'u-rate'
 };
 
 var Rate = function (_Component) {
@@ -65,6 +68,7 @@ var Rate = function (_Component) {
             value = _props.value,
             defaultValue = _props.defaultValue,
             onChange = _props.onChange,
+            clsPrefix = _props.clsPrefix,
             onHoverChange = _props.onHoverChange,
             allowHalf = _props.allowHalf,
             disabled = _props.disabled,
@@ -75,7 +79,7 @@ var Rate = function (_Component) {
         return _react2["default"].createElement(
             'span',
             { className: 'u-Rate' },
-            _react2["default"].createElement(_rcRate2["default"], { count: count, value: value, defaultValue: defaultValue, onChange: onChange,
+            _react2["default"].createElement(_rcRate2["default"], { prefixCls: clsPrefix, count: count, value: value, defaultValue: defaultValue, onChange: onChange,
                 onHoverChange: onHoverChange, allowHalf: allowHalf, disabled: disabled, character: character,
                 className: className, style: style })
         );
