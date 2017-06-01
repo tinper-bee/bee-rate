@@ -36,11 +36,9 @@ class Rate extends Component {
     render() {
         const {count, value, defaultValue, onChange, clsPrefix, onHoverChange, allowHalf, disabled, character, className, style} = this.props;
         return (
-            <span className="u-Rate">
                 <Rates prefixCls={clsPrefix} count={count} value={value}  defaultValue={defaultValue} onChange={onChange}
                        onHoverChange={onHoverChange} allowHalf={allowHalf} disabled={disabled} character={character}
                        className={className} style={style}/>
-            </span>
         )
     }
 };
