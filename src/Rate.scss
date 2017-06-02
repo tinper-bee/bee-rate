@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 18px;
+  font-size: $font-size;
   display: inline-block;
   vertical-align: middle;
   font-weight: normal;
@@ -25,7 +25,7 @@
   margin-right: 8px;
   position: relative;
   transition: all .3s;
-  color: #e9e9e9;
+  color: $gray-lightest;
   cursor: pointer;
   line-height: 1.5;
 }
@@ -52,9 +52,9 @@
 }
 .u-rate-star-half .u-rate-star-first,
 .u-rate-star-full .u-rate-star-second {
-  color: #f5a623;
+  color: $color-warning;
 }
 .u-rate-star-half:hover .u-rate-star-first,
 .u-rate-star-full:hover .u-rate-star-second {
-  color: #f8c165;
+  color: $color-warning;
 }
