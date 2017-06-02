@@ -7,8 +7,6 @@
   font-size: $font-size;
   display: inline-block;
   vertical-align: middle;
-  font-weight: normal;
-  font-style: normal;
 }
 .u-rate-disabled .u-rate-star:before,
 .u-rate-disabled .u-rate-star-content:before {
@@ -22,12 +20,11 @@
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin-right: 8px;
+  margin-right: $rate-star-marginRight;
   position: relative;
   transition: all .3s;
-  color: $gray-lightest;
+  color: $rate-star-default-color;
   cursor: pointer;
-  line-height: 1.5;
 }
 .u-rate-star-first,
 .u-rate-star-second {
@@ -51,10 +48,7 @@
   opacity: 1;
 }
 .u-rate-star-half .u-rate-star-first,
-.u-rate-star-full .u-rate-star-second {
-  color: $color-warning;
-}
-.u-rate-star-half:hover .u-rate-star-first,
+.u-rate-star-full .u-rate-star-second,.u-rate-star-half:hover .u-rate-star-first,
 .u-rate-star-full:hover .u-rate-star-second {
-  color: $color-warning;
+  color: $rate-star-active-color;
 }

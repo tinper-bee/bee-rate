@@ -76,13 +76,9 @@ var Rate = function (_Component) {
             className = _props.className,
             style = _props.style;
 
-        return _react2["default"].createElement(
-            'span',
-            { className: 'u-Rate' },
-            _react2["default"].createElement(_rcRate2["default"], { prefixCls: clsPrefix, count: count, value: value, defaultValue: defaultValue, onChange: onChange,
-                onHoverChange: onHoverChange, allowHalf: allowHalf, disabled: disabled, character: character,
-                className: className, style: style })
-        );
+        return _react2["default"].createElement(_rcRate2["default"], { prefixCls: clsPrefix, count: count, value: value, defaultValue: defaultValue, onChange: onChange,
+            onHoverChange: onHoverChange, allowHalf: allowHalf, disabled: disabled, character: character,
+            className: className, style: style });
     };
 
     return Rate;

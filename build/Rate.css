@@ -4,11 +4,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 18px;
+  font-size: 1.6rem;
   display: inline-block;
-  vertical-align: middle;
-  font-weight: normal;
-  font-style: normal; }
+  vertical-align: middle; }
 
 .u-rate-disabled .u-rate-star:before,
 .u-rate-disabled .u-rate-star-content:before {
@@ -25,9 +23,8 @@
   margin-right: 8px;
   position: relative;
   transition: all .3s;
-  color: #e9e9e9;
-  cursor: pointer;
-  line-height: 1.5; }
+  color: rgb(238,238,238);
+  cursor: pointer; }
 
 .u-rate-star-first,
 .u-rate-star-second {
@@ -51,9 +48,6 @@
   opacity: 1; }
 
 .u-rate-star-half .u-rate-star-first,
-.u-rate-star-full .u-rate-star-second {
-  color: #f5a623; }
-
-.u-rate-star-half:hover .u-rate-star-first,
+.u-rate-star-full .u-rate-star-second, .u-rate-star-half:hover .u-rate-star-first,
 .u-rate-star-full:hover .u-rate-star-second {
-  color: #f8c165; }
+  color: rgb(255,152,0); }
