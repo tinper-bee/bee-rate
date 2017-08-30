@@ -4,6 +4,10 @@
  * @description onChange和onHoverChange的使用
  *
  */
+
+import React, { Component } from 'react';
+import Rate from '../../src';
+
 class Demo3 extends Component {
     constructor(props){
         super(props);
@@ -32,3 +36,5 @@ class Demo3 extends Component {
         )
     }
 }
+
+export default Demo3;

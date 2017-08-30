@@ -4,7 +4,11 @@
  * @description character的使用
  *
  */
+
+import React, { Component } from 'react';
 import Icon from 'bee-icon';
+import Rate from '../../src';
+
 class Demo4 extends Component {
     render() {
         return (
@@ -17,3 +21,5 @@ class Demo4 extends Component {
         )
     }
 }
+
+export default Demo4;
