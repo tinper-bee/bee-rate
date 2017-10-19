@@ -1,6 +1,7 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import Rates from 'rc-rate';
 import Icon from 'bee-icon';
+import PropTypes from 'prop-types';
 
 const propTypes = {
     count: PropTypes.number,

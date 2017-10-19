@@ -16,6 +16,10 @@ var _beeIcon = require('bee-icon');
 
 var _beeIcon2 = _interopRequireDefault(_beeIcon);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
@@ -27,15 +31,15 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
 var propTypes = {
-    count: _react.PropTypes.number,
-    value: _react.PropTypes.number,
-    defaultValue: _react.PropTypes.number,
-    onChange: _react.PropTypes.func,
-    onHoverChange: _react.PropTypes.func,
-    allowHalf: _react.PropTypes.bool,
-    disabled: _react.PropTypes.bool,
-    className: _react.PropTypes.string,
-    style: _react.PropTypes.object
+    count: _propTypes2["default"].number,
+    value: _propTypes2["default"].number,
+    defaultValue: _propTypes2["default"].number,
+    onChange: _propTypes2["default"].func,
+    onHoverChange: _propTypes2["default"].func,
+    allowHalf: _propTypes2["default"].bool,
+    disabled: _propTypes2["default"].bool,
+    className: _propTypes2["default"].string,
+    style: _propTypes2["default"].object
 
 };
 
