@@ -14,15 +14,13 @@ class Demo3 extends Component {
         this.state={
             value:3
         };
-        this.handleChange=this.handleChange.bind(this);
-        this.onHoverChange=this.onHoverChange.bind(this);
     }
-    handleChange(value){
+    handleChange=(value)=>{
         this.setState({
             value:value
         })
     }
-    onHoverChange(value){
+    onHoverChange=(value)=>{console.log(value);
         this.setState({
             value:value
         })
@@ -30,7 +28,7 @@ class Demo3 extends Component {
     render() {
         return (
             <div>
-                <Rate onChange={this.handleChange} count={8} onHoverChange={this.onHoverChange} />
+                <Rate value={this.state.value} onChange={this.handleChange} count={8}  />
                 <span>{this.state.value}</span>
             </div>
         )
