@@ -20,11 +20,6 @@ class Demo3 extends Component {
             value:value
         })
     }
-    onHoverChange=(value)=>{console.log(value);
-        this.setState({
-            value:value
-        })
-    }
     render() {
         return (
             <div>
