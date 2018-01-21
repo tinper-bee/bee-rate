@@ -62,10 +62,6 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _src = __webpack_require__(64);
-	
-	var _src2 = _interopRequireDefault(_src);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
 	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
@@ -80,7 +76,7 @@
 	
 	var CARETUP = _react2['default'].createElement('i', { className: 'uf uf-arrow-up' });
 	
-	var Demo1 = __webpack_require__(73);var Demo2 = __webpack_require__(74);var Demo3 = __webpack_require__(75);var Demo4 = __webpack_require__(76);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " 默认Rate", "code": "/**\n *\n * @title 默认Rate\n * @description 这是描述\n *\n */\n\nimport React, { Component } from 'react';\nimport Rate from 'bee-rate';\n\nclass Demo1 extends Component {\n    constructor(props){\n        super(props);\n        this.state={\n            value:3\n        };\n    }\n    handChange=value=>{\n        this.setState({\n            value\n        })\n    }\n    render() {\n        return (\n            <Rate value={this.state.value} onChange={this.handChange}/>\n        )\n    }\n}\n\n", "desc": " 这是描述" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 支持选中半星", "code": "/**\n *\n * @title 支持选中半星\n * @description 将allowHalf设置为true即可\n *\n */\n\nimport React, { Component } from 'react';\nimport Rate from 'bee-rate';\n\nclass Demo2 extends Component {\n    constructor(props){\n        super(props);\n        this.state={\n            value:3\n        };\n    }\n    handChange=value=>{\n        this.setState({\n            value\n        })\n    }\n    render() {\n        return (\n            <Rate allowHalf={true} value={this.state.value} onChange={this.handChange}/>\n        )\n    }\n}\n\n", "desc": " 将allowHalf设置为true即可" }, { "example": _react2['default'].createElement(Demo3, null), "title": " 评分加显示文案", "code": "/**\n *\n * @title 评分加显示文案\n * @description onChange和onHoverChange的使用\n *\n */\n\nimport React, { Component } from 'react';\nimport Rate from 'bee-rate';\n\nclass Demo3 extends Component {\n    constructor(props){\n        super(props);\n        this.state={\n            value:3\n        };\n    }\n    handleChange=(value)=>{\n        this.setState({\n            value:value\n        })\n    }\n    onHoverChange=(value)=>{console.log(value);\n        this.setState({\n            value:value\n        })\n    }\n    render() {\n        return (\n            <div>\n                <Rate value={this.state.value} onChange={this.handleChange} count={8}  />\n                <span>{this.state.value}</span>\n            </div>\n        )\n    }\n}\n\n", "desc": " onChange和onHoverChange的使用" }, { "example": _react2['default'].createElement(Demo4, null), "title": " 其它评分样式", "code": "/**\n *\n * @title 其它评分样式\n * @description character的使用\n *\n */\n\nimport React, { Component } from 'react';\nimport Icon from 'bee-icon';\nimport Rate from 'bee-rate';\n\nclass Demo4 extends Component {\n    constructor(props){\n        super(props);\n        this.state={\n            v1:1,\n            v2:2,\n            v3:3,\n            v4:4\n        };\n    }\n    handChange=(value,type)=>{\n        switch(type){\n            case 1:\n            this.setState({\n                v1:value\n            });\n            break;\n            case 2:\n            this.setState({\n                v2:value\n            });\n            break;\n            case 3:\n            this.setState({\n                v3:value\n            });\n            break;\n            case 4:\n            this.setState({\n                v4:value\n            });\n            break;\n        }\n    }\n    render() {\n        return (\n            <ul style={{\"listStyle\":\"none\"}}>\n                <li><Rate character=\"A\" value={this.state.v1} onChange={(v)=>{this.handChange(v,1)}} /></li>\n                <li><Rate character=\"字\" value={this.state.v2} onChange={(v)=>{this.handChange(v,2)}} /></li>\n                <li><Rate character={<Icon type=\"uf-bell\" />} value={this.state.v3} onChange={(v)=>{this.handChange(v,3)}} /></li>\n                <li><Rate character={<Icon type=\"uf-heart\" />} value={this.state.v4} onChange={(v)=>{this.handChange(v,4)}}/></li>\n            </ul>\n        )\n    }\n}\n\n", "desc": " character的使用" }];
+	var Demo1 = __webpack_require__(64);var Demo2 = __webpack_require__(74);var Demo3 = __webpack_require__(75);var Demo4 = __webpack_require__(76);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " 默认Rate", "code": "/**\n *\n * @title 默认Rate\n * @description 这是描述\n *\n */\n\nimport React, { Component } from 'react';\nimport { Rate } from 'tinper-bee';\n\nclass Demo1 extends Component {\n    constructor(props){\n        super(props);\n        this.state={\n            value:3\n        };\n    }\n    handChange=value=>{\n        this.setState({\n            value\n        })\n    }\n    render() {\n        return (\n            <Rate value={this.state.value} onChange={this.handChange}/>\n        )\n    }\n}\n\n", "desc": " 这是描述" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 支持选中半星", "code": "/**\n *\n * @title 支持选中半星\n * @description 将allowHalf设置为true即可\n *\n */\n\nimport React, { Component } from 'react';\nimport { Rate } from 'tinper-bee';\n\nclass Demo2 extends Component {\n    constructor(props){\n        super(props);\n        this.state={\n            value:3\n        };\n    }\n    handChange=value=>{\n        this.setState({\n            value\n        })\n    }\n    render() {\n        return (\n            <Rate allowHalf={true} value={this.state.value} onChange={this.handChange}/>\n        )\n    }\n}\n\n", "desc": " 将allowHalf设置为true即可" }, { "example": _react2['default'].createElement(Demo3, null), "title": " 评分加显示文案", "code": "/**\n *\n * @title 评分加显示文案\n * @description onChange和onHoverChange的使用\n *\n */\n\nimport React, { Component } from 'react';\nimport { Rate } from 'tinper-bee';\n\nclass Demo3 extends Component {\n    constructor(props){\n        super(props);\n        this.state={\n            value:3\n        };\n    }\n    handleChange=(value)=>{\n        this.setState({\n            value:value\n        })\n    }\n    render() {\n        return (\n            <div>\n                <Rate value={this.state.value} onChange={this.handleChange} count={8}  />\n                <span>{this.state.value}</span>\n            </div>\n        )\n    }\n}\n\n", "desc": " onChange和onHoverChange的使用" }, { "example": _react2['default'].createElement(Demo4, null), "title": " 其它评分样式", "code": "/**\n *\n * @title 其它评分样式\n * @description character的使用\n *\n */\n\nimport React, { Component } from 'react';\nimport { Rate, Icon } from 'tinper-bee';\n\nclass Demo4 extends Component {\n    constructor(props){\n        super(props);\n        this.state={\n            v1:1,\n            v2:2,\n            v3:3,\n            v4:4\n        };\n    }\n    handChange=(value,type)=>{\n        switch(type){\n            case 1:\n            this.setState({\n                v1:value\n            });\n            break;\n            case 2:\n            this.setState({\n                v2:value\n            });\n            break;\n            case 3:\n            this.setState({\n                v3:value\n            });\n            break;\n            case 4:\n            this.setState({\n                v4:value\n            });\n            break;\n        }\n    }\n    render() {\n        return (\n            <ul style={{\"listStyle\":\"none\"}}>\n                <li><Rate character=\"A\" value={this.state.v1} onChange={(v)=>{this.handChange(v,1)}} /></li>\n                <li><Rate character=\"字\" value={this.state.v2} onChange={(v)=>{this.handChange(v,2)}} /></li>\n                <li><Rate character={<Icon type=\"uf-bell\" />} value={this.state.v3} onChange={(v)=>{this.handChange(v,3)}} /></li>\n                <li><Rate character={<Icon type=\"uf-heart\" />} value={this.state.v4} onChange={(v)=>{this.handChange(v,4)}}/></li>\n            </ul>\n        )\n    }\n}\n\n", "desc": " character的使用" }];
 	
 	var Demo = function (_Component) {
 	    _inherits(Demo, _Component);
@@ -106,16 +102,22 @@
 	            title = _props.title,
 	            example = _props.example,
 	            code = _props.code,
-	            desc = _props.desc;
+	            desc = _props.desc,
+	            scss_code = _props.scss_code;
 	
 	        var caret = this.state.open ? CARETUP : CARET;
 	        var text = this.state.open ? "隐藏代码" : "查看代码";
 	
-	        var footer = _react2['default'].createElement(
-	            _beeButton2['default'],
-	            { shape: 'block', onClick: this.handleClick },
-	            caret,
-	            text
+	        var header = _react2['default'].createElement(
+	            'div',
+	            null,
+	            example,
+	            _react2['default'].createElement(
+	                _beeButton2['default'],
+	                { style: { "marginTop": "10px" }, shape: 'block', onClick: this.handleClick },
+	                caret,
+	                text
+	            )
 	        );
 	        return _react2['default'].createElement(
 	            _beeLayout.Col,
@@ -132,7 +134,8 @@
 	            ),
 	            _react2['default'].createElement(
 	                _beePanel.Panel,
-	                { collapsible: true, headerContent: true, expanded: this.state.open, colors: 'bordered', header: example, footer: footer, footerStyle: { padding: 0 } },
+	                { collapsible: true, headerContent: true, expanded: this.state.open, colors: 'bordered', header: header,
+	                    footerStyle: { padding: 0 } },
 	                _react2['default'].createElement(
 	                    'pre',
 	                    null,
@@ -141,7 +144,16 @@
 	                        { className: 'hljs javascript' },
 	                        code
 	                    )
-	                )
+	                ),
+	                !!scss_code ? _react2['default'].createElement(
+	                    'pre',
+	                    null,
+	                    _react2['default'].createElement(
+	                        'code',
+	                        { className: 'hljs css' },
+	                        scss_code
+	                    )
+	                ) : null
 	            )
 	        );
 	    };
@@ -164,7 +176,8 @@
 	            null,
 	            DemoArray.map(function (child, index) {
 	
-	                return _react2['default'].createElement(Demo, { example: child.example, title: child.title, code: child.code, desc: child.desc, key: index });
+	                return _react2['default'].createElement(Demo, { example: child.example, title: child.title, code: child.code, scss_code: child.scss_code,
+	                    desc: child.desc, key: index });
 	            })
 	        );
 	    };
@@ -4586,12 +4599,18 @@
 	      elFuturePos = (0, _getElFuturePos2['default'])(elRegion, refNodeRegion, points, offset, targetOffset);
 	      _utils2['default'].mix(newElRegion, elFuturePos);
 	    }
-	
-	    // 检查反下后的位置是否可以放下了
-	    // 如果仍然放不下只有指定了可以调整当前方向才调整
-	    newOverflowCfg.adjustX = overflow.adjustX && isFailX(elFuturePos, elRegion, visibleRect);
-	
-	    newOverflowCfg.adjustY = overflow.adjustY && isFailY(elFuturePos, elRegion, visibleRect);
+	    var isStillFailX = isFailX(elFuturePos, elRegion, visibleRect);
+	    var isStillFailY = isFailY(elFuturePos, elRegion, visibleRect);
+	    // 检查反下后的位置是否可以放下了，如果仍然放不下：
+	    // 1. 复原修改过的定位参数
+	    if (isStillFailX || isStillFailY) {
+	      points = align.points;
+	      offset = align.offset || [0, 0];
+	      targetOffset = align.targetOffset || [0, 0];
+	    }
+	    // 2. 只有指定了可以调整当前方向才调整
+	    newOverflowCfg.adjustX = overflow.adjustX && isStillFailX;
+	    newOverflowCfg.adjustY = overflow.adjustY && isStillFailY;
 	
 	    // 确实要调整，甚至可能会调整高度宽度
 	    if (newOverflowCfg.adjustX || newOverflowCfg.adjustY) {
@@ -6184,10 +6203,73 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(4);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _src = __webpack_require__(65);
+	
+	var _src2 = _interopRequireDefault(_src);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title 默认Rate
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 这是描述
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	
+	var Demo1 = function (_Component) {
+	    _inherits(Demo1, _Component);
+	
+	    function Demo1(props) {
+	        _classCallCheck(this, Demo1);
+	
+	        var _this = _possibleConstructorReturn(this, _Component.call(this, props));
+	
+	        _this.handChange = function (value) {
+	            _this.setState({
+	                value: value
+	            });
+	        };
+	
+	        _this.state = {
+	            value: 3
+	        };
+	        return _this;
+	    }
+	
+	    Demo1.prototype.render = function render() {
+	        return _react2['default'].createElement(_src2['default'], { value: this.state.value, onChange: this.handChange });
+	    };
+	
+	    return Demo1;
+	}(_react.Component);
+	
+	exports['default'] = Demo1;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	
-	var _Rate = __webpack_require__(65);
+	var _Rate = __webpack_require__(66);
 	
 	var _Rate2 = _interopRequireDefault(_Rate);
 
@@ -6197,7 +6279,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6210,11 +6292,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _rcRate = __webpack_require__(66);
+	var _rcRate = __webpack_require__(67);
 	
 	var _rcRate2 = _interopRequireDefault(_rcRate);
 	
-	var _beeIcon = __webpack_require__(71);
+	var _beeIcon = __webpack_require__(72);
 	
 	var _beeIcon2 = _interopRequireDefault(_beeIcon);
 	
@@ -6297,14 +6379,14 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _Rate = __webpack_require__(67);
+	var _Rate = __webpack_require__(68);
 	
 	var _Rate2 = _interopRequireDefault(_Rate);
 	
@@ -6314,7 +6396,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6337,13 +6419,13 @@
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _KeyCode = __webpack_require__(68);
+	var _KeyCode = __webpack_require__(69);
 	
 	var _KeyCode2 = _interopRequireDefault(_KeyCode);
 	
-	var _util = __webpack_require__(69);
+	var _util = __webpack_require__(70);
 	
-	var _Star = __webpack_require__(70);
+	var _Star = __webpack_require__(71);
 	
 	var _Star2 = _interopRequireDefault(_Star);
 	
@@ -6625,7 +6707,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -7154,7 +7236,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -7203,7 +7285,7 @@
 	}
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7325,7 +7407,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7334,7 +7416,7 @@
 	  value: true
 	});
 	
-	var _Icon = __webpack_require__(72);
+	var _Icon = __webpack_require__(73);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -7344,7 +7426,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7423,69 +7505,6 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _react = __webpack_require__(4);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _src = __webpack_require__(64);
-	
-	var _src2 = _interopRequireDefault(_src);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title 默认Rate
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 这是描述
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-	
-	var Demo1 = function (_Component) {
-	    _inherits(Demo1, _Component);
-	
-	    function Demo1(props) {
-	        _classCallCheck(this, Demo1);
-	
-	        var _this = _possibleConstructorReturn(this, _Component.call(this, props));
-	
-	        _this.handChange = function (value) {
-	            _this.setState({
-	                value: value
-	            });
-	        };
-	
-	        _this.state = {
-	            value: 3
-	        };
-	        return _this;
-	    }
-	
-	    Demo1.prototype.render = function render() {
-	        return _react2['default'].createElement(_src2['default'], { value: this.state.value, onChange: this.handChange });
-	    };
-	
-	    return Demo1;
-	}(_react.Component);
-	
-	exports['default'] = Demo1;
-	module.exports = exports['default'];
-
-/***/ }),
 /* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7499,7 +7518,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _src = __webpack_require__(64);
+	var _src = __webpack_require__(65);
 	
 	var _src2 = _interopRequireDefault(_src);
 	
@@ -7562,7 +7581,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _src = __webpack_require__(64);
+	var _src = __webpack_require__(65);
 	
 	var _src2 = _interopRequireDefault(_src);
 	
@@ -7590,13 +7609,6 @@
 	        var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 	
 	        _this.handleChange = function (value) {
-	            _this.setState({
-	                value: value
-	            });
-	        };
-	
-	        _this.onHoverChange = function (value) {
-	            console.log(value);
 	            _this.setState({
 	                value: value
 	            });
@@ -7641,11 +7653,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _beeIcon = __webpack_require__(71);
+	var _beeIcon = __webpack_require__(72);
 	
 	var _beeIcon2 = _interopRequireDefault(_beeIcon);
 	
-	var _src = __webpack_require__(64);
+	var _src = __webpack_require__(65);
 	
 	var _src2 = _interopRequireDefault(_src);
 	
