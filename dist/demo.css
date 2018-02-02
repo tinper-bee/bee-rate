@@ -5204,14 +5204,6 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
 
 /* FormGroup */
 /*  Navlayout  */
-.u-rate {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 16px;
-  display: inline-block;
-  vertical-align: middle; }
-
 .u-rate-disabled .u-rate-star:before,
 .u-rate-disabled .u-rate-star-content:before {
   cursor: default; }
@@ -5219,40 +5211,44 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
 .u-rate-disabled .u-rate-star:hover {
   transform: scale(1); }
 
-.u-rate-star {
+.u-rate {
   margin: 0;
   padding: 0;
+  list-style: none;
+  font-size: 16px;
   display: inline-block;
-  margin-right: 8px;
-  position: relative;
-  transition: all .3s;
-  color: rgb(238,238,238);
-  cursor: pointer; }
-
-.u-rate-star-first,
-.u-rate-star-second {
-  transition: all .3s; }
-
-.u-rate-star:hover {
-  transform: scale(1.1); }
-
-.u-rate-star-first {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  opacity: 0; }
-
-.u-rate-star-half .u-rate-star-first,
-.u-rate-star-half .u-rate-star-second {
-  opacity: 1; }
-
-.u-rate-star-half .u-rate-star-first,
-.u-rate-star-full .u-rate-star-second, .u-rate-star-half:hover .u-rate-star-first,
-.u-rate-star-full:hover .u-rate-star-second {
-  color: rgb(255,152,0); }
+  vertical-align: middle;
+  outline: none; }
+  .u-rate .u-rate-star {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    transition: all .3s;
+    color: rgb(238,238,238);
+    cursor: pointer;
+    outline: none; }
+  .u-rate .u-rate-star-first,
+  .u-rate .u-rate-star-second {
+    transition: all .3s; }
+  .u-rate .u-rate-star:hover {
+    transform: scale(1.1); }
+  .u-rate .u-rate-star-first {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0; }
+  .u-rate .u-rate-star-half .u-rate-star-first,
+  .u-rate .u-rate-star-half .u-rate-star-second {
+    opacity: 1; }
+  .u-rate .u-rate-star-half .u-rate-star-first,
+  .u-rate .u-rate-star-full .u-rate-star-second, .u-rate .u-rate-star-half:hover .u-rate-star-first,
+  .u-rate .u-rate-star-full:hover .u-rate-star-second {
+    color: rgb(255,152,0); }
 
 /* FormGroup */
 /*  Navlayout  */

@@ -23,7 +23,7 @@ class Demo1 extends Component {
     render() {
         return (
             <Rate value={this.state.value} onChange={this.handChange}/>
-        )
+        ) 
     }
 }
 
