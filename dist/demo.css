@@ -5283,6 +5283,8 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
     color: rgb(238,238,238);
     cursor: pointer;
     outline: none; }
+    .u-rate .u-rate-star div:focus {
+      outline: none; }
   .u-rate .u-rate-star-first,
   .u-rate .u-rate-star-second {
     transition: all .3s; }
